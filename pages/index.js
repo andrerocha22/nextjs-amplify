@@ -39,7 +39,6 @@ async function handleCreatePost(event) {
 
     window.location.href = `/posts/${data.createPost.id}`;
   } catch ({ errors }) {
-    console.error(...errors);
     throw new Error(errors[0].message);
   }
 }
